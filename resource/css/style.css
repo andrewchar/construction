@@ -1,0 +1,65 @@
+/* ------------------------------------ */
+/* BASIC SETUP */
+/* ------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html, body {
+  background-color: #fff;
+  text-rendering: optimizeLegibility;
+  font-size: 17px;
+}
+
+/* ------------------------------------ */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------ */
+
+/* MAIN COLORS */
+
+.row {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/* ------------------------------------ */
+/* HEADER/NAV */
+/* ------------------------------------ */
+header {
+
+}
+
+.logo-container {
+  padding: 30px 0 20px;
+  background-color: #171312;
+  width: 100%;
+}
+
+.logo-container .logo {
+  display: inline-block;
+  margin: 0 auto;
+  width: 270px;
+}
+
+.nav-container {
+  /*width: 100%;*/
+  background-color: rgba(0, 0, 0, 0.89);
+  border-top: 1px dotted #726659;
+}
+
+nav {
+  list-style: none;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 15px 15px;
+  color: #726659;
+}
