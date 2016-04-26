@@ -8,15 +8,20 @@
   outline: none;
 }
 
+
 html, body {
   background-color: #fff;
+  background-image: url('img/bgtexture.png');
+  background-repeat:repeat;
   text-rendering: optimizeLegibility;
   font-family: 'Oswald', sans-serif;
-  font-size: 20px;
+  font-size: 21px;
   color: #3c3c3c;
   font-weight: 300;
   overflow-x: hidden;
 }
+
+
 
 /* ------------------------------------ */
 /* REUSABLE COMPONENTS */
@@ -26,11 +31,33 @@ html, body {
 
 
 /* HEADERS */
-h1 {
+h1, h2, h3, h4 {
   text-transform: uppercase;
   text-align: center;
   font-weight: 300;
   letter-spacing: 2px;
+}
+
+h3, h4 {
+  color: #726659;
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  font-size: 180%;
+  margin: 25px 0 15px;
+}
+
+h3 {
+  font-size: 130%;
+  margin: 15px 0 10px;
+}
+
+h4 {
+  font-size: 115%;
 }
 
 /* PARAGRAPH */
@@ -44,6 +71,10 @@ h1 {
 /* EXTEND CLASSES */
 .button {
   font-weight: 400;
+}
+
+.house-photo, .form-wrapper {
+  box-shadow: 2px 2px 2px #3c3c3c;
 }
 
 /* ROW WIDTH */
@@ -60,7 +91,8 @@ section {
 /* LINK STYLE */
 a {
   text-decoration: none;
-  color: #726659
+  color: #726659;
+  transition: color 0.3s
 }
 a:hover {
   color: #8f806f;
@@ -69,7 +101,7 @@ a:hover {
 /* IMG FOR CAROUSEL */
 .responsive-image {
   width: 100%;
-  height: auto;
+  // height: auto;
 }
 
 .hero {
@@ -78,21 +110,26 @@ a:hover {
 
 /* BUTTONS */
 .button {
-  font-size: 80%;
+  font-size: 75%;
   color: #fff;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  width: 150px;
+  width: 156px;
   margin: 25px auto;
   text-align: center;
   display: block;
   border: 1px solid #171312;
   padding: 8px;
   border-radius: 5px;
-  background-color: #2d2a29
+  background-image: linear-gradient(to top, #171312, #726659);
+  /*@extend box-shadow;*/
 }
-.button:hover {
-  background-color: #8f806f;
-  color: #fff;
+
+/* CLEARFIX */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* ------------------------------------ */
@@ -147,4 +184,120 @@ nav ul li {
 .work-showcase {
   width: 90%;
   margin: 0 auto;
+}
+
+.house-showcase {
+  list-style: none;
+}
+
+.house-showcase li {
+  display: block;
+  float: left;
+  width: 23%;
+  margin: 1%;
+}
+
+.house-showcase li p {
+  text-align: center;
+}
+
+.house-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+  border: 1px solid #3c3c3c;
+}
+
+.house-photo img {
+  opacity: 0.8;
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s
+}
+
+.house-photo img:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+/* ------------------------------------ */
+/* CONTACT AREA */
+/* ------------------------------------ */
+.contact-us {
+  margin-top: 40px;
+}
+
+.contact-list {
+  list-style: none;
+  /* OFFSET LIST FOR BETTER VISUAL */
+  width: 50%;
+  margin-left: 45%;
+  margin-top: 30px;
+}
+
+.contact-list li {
+  text-align: center;
+  padding: 5px;
+}
+
+.form-wrapper {
+  width: 70%;
+  margin-left: 10%;
+  background-color: #8f867c;
+  border: 2px solid #726659;
+}
+
+form {
+  height: 330px;
+}
+
+form .button {
+  margin: 10px auto;
+}
+
+input[type=text], textarea {
+  width: 95%;
+  margin-left: 2.5%;
+  padding: 5px;
+  margin-top: 12px;
+  border: 2px solid #726659;
+}
+
+/* ------------------------------------ */
+/* FOOTER */
+/* ------------------------------------ */
+footer {
+  background-color: #171312;
+  margin-top: 25px;
+  color: #fff;
+}
+
+.copyright {
+  float: left;
+  padding: 20px;
+}
+
+.social-media {
+  float: right;
+}
+
+.social-media ul {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.social-media ul li {
+  display: inline;
+}
+
+.social-media ul li i {
+  font-size: 170%;
+  vertical-align: middle;
+  padding: 20px;
 }
