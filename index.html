@@ -4,25 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CustomTimber</title>
+  <!-- CAROUSEL  -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
+  <!-- /CAROUSEL -->
   <link type="text/css" href="vendor\css\normalize.css" rel="stylesheet">
   <link type="text/css" href="vendor\css\grid.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
   <link type="text/css" href="resource\css\style.css" rel="stylesheet">
 </head>
 <body>
 
   <header>
-      <div class="logo-container">
-        <a href="#"><img class="logo" src="resource\img\Drawing.png"></a>
-      </div>
-      <div class="nav-container">
-        <nav>
-          <ul>
-            <li>What We Do</li>
-            <li>Contact Us</li>
-          </ul>
-        </nav>
-      </div>
+    <div class="logo-container">
+      <img class="logo-img" src="resource\img\logo.png">
+      <p>custom timber</p>
+    </div>
+    <div class="nav-container">
+      <nav>
+        <ul>
+          <li><a href="#">what we do</a></li>
+          <li><a href="#">contact us</a></li>
+          <li><a href="#">social media</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="fade span-2-of-2">
+      <div><img class="responsive-image hero" src="resource\img\home1.jpg" alt="house picture"></div>
+      <div><img class="responsive-image hero" src="resource\img\home1.jpg" alt="house picture"></div>
+      <div><img class="responsive-image hero" src="resource\img\home1.jpg" alt="house picture"></div>
+    </div>
   </header>
+
+  <section class="main-body">
+    <div class="row">
+      <div class="col span-2-of-2">
+        <h1>we build stunning first impressions</h1>
+        <p class="long-copy">
+          Our timeless, one-of-a-kind dwellings will always reflect your vision of the ideal living space, because you help design it. From initial design through all phases of construction, customers enjoy a one-on-one relationship throughout the entire process.
+        </p>
+        <a href="#" class="button">Let's Get Started!</a>
+      </div>
+    </div>
+    <div class="work-showcase">
+      <div class="col span-1-of-4">
+        <a href="#">
+          <img class="responsive-image" src="resource\img\kitchen.jpg" alt="kitchen">
+          Kitchens
+        </a>
+      </div>
+      <div class="col span-1-of-4">
+        <a href="#">
+          <img class="responsive-image" src="resource\img\bathroom.jpg" alt="bathroom">
+          Bathrooms
+        </a>
+      </div>
+      <div class="col span-1-of-4">
+        <a href="#">
+          <img class="responsive-image" src="resource\img\reno.jpg" alt="renovation">
+          Renovations
+        </a>
+      </div>
+      <div class="col span-1-of-4">
+        <a href="#">
+          <img class="responsive-image" src="resource\img\curb.jpg" alt="curb">
+          Curb Appeal
+        </a>
+      </div>
+    </div>
+  <!-- </div> -->
+  </section>
+
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <!-- CAROUSEL PLUGIN -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+  <script type="text/javascript" src="resource\js\script.js"></script>
 
 </body>
 </html>

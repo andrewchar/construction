@@ -11,41 +11,114 @@
 html, body {
   background-color: #fff;
   text-rendering: optimizeLegibility;
-  font-size: 17px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: #3c3c3c;
+  font-weight: 300;
+  overflow-x: hidden;
 }
 
 /* ------------------------------------ */
 /* REUSABLE COMPONENTS */
 /* ------------------------------------ */
 
-/* MAIN COLORS */
+/* MAIN COLORS */ /*light brown*/ /*lighter brown, mostly used for :hover*/
 
+
+/* HEADERS */
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* PARAGRAPH */
+.long-copy {
+  line-height: 145%;
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+}
+
+/* EXTEND CLASSES */
+.button {
+  font-weight: 400;
+}
+
+/* ROW WIDTH */
 .row {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
+}
+
+/* SECTIONS */
+section {
+  padding: 5px;
+}
+
+/* LINK STYLE */
+a {
+  text-decoration: none;
+  color: #726659
+}
+a:hover {
+  color: #8f806f;
+}
+
+/* IMG FOR CAROUSEL */
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero {
+  max-height: 105vh;
+}
+
+/* BUTTONS */
+.button {
+  font-size: 80%;
+  color: #fff;
+  text-transform: uppercase;
+  width: 150px;
+  margin: 25px auto;
+  text-align: center;
+  display: block;
+  border: 1px solid #171312;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #2d2a29
+}
+.button:hover {
+  background-color: #8f806f;
+  color: #fff;
 }
 
 /* ------------------------------------ */
 /* HEADER/NAV */
 /* ------------------------------------ */
-header {
-
-}
-
 .logo-container {
-  padding: 30px 0 20px;
+  padding: 50px 0 30px;
   background-color: #171312;
-  width: 100%;
+}
+.logo-container p {/* LOGO TEXT */
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 170%;
+  letter-spacing: 8px;
 }
 
-.logo-container .logo {
-  display: inline-block;
+.logo-img {
+  padding-bottom: 9px;
+  display: block;
   margin: 0 auto;
-  width: 270px;
+  width: 150px;
+
 }
 
 .nav-container {
-  /*width: 100%;*/
   background-color: rgba(0, 0, 0, 0.89);
   border-top: 1px dotted #726659;
 }
@@ -61,5 +134,17 @@ nav ul {
 nav ul li {
   display: inline-block;
   margin: 15px 15px;
-  color: #726659;
+  text-transform: uppercase;
+}
+
+.fade div {
+  max-height: 50vh;
+}
+
+/* ------------------------------------ */
+/* MAIN BODY */
+/* ------------------------------------ */
+.work-showcase {
+  width: 90%;
+  margin: 0 auto;
 }

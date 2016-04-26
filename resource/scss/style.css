@@ -12,7 +12,11 @@ html,
 body {
   background-color: #fff;
   text-rendering: optimizeLegibility;
-  font-size: 17px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: #3c3c3c;
+  font-weight: 300;
+  overflow-x: hidden;
 }
 
 /* ------------------------------------ */
@@ -20,36 +24,109 @@ body {
 /* ------------------------------------ */
 
 /* MAIN COLORS */
-$darkbrown: #4c453e;
-$lightbrown: #726659;
+$darkbrown: #171312;
+$primary: #726659; /*light brown*/
+$secondary: #8f806f; /*lighter brown, mostly used for :hover*/
 
+
+/* HEADERS */
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* PARAGRAPH */
+.long-copy {
+  line-height: 145%;
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+}
+
+/* EXTEND CLASSES */
+@define-extend thick-font {
+  font-weight: 400;
+}
+
+/* ROW WIDTH */
 .row {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
+}
+
+/* SECTIONS */
+section {
+  padding: 5px;
+}
+
+/* LINK STYLE */
+a {
+  text-decoration: none;
+  color: $primary;
+  &:hover {
+    color: $secondary;
+  }
+}
+
+/* IMG FOR CAROUSEL */
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero {
+  max-height: 105vh;
+}
+
+/* BUTTONS */
+.button {
+  font-size: 80%;
+  color: #fff;
+  text-transform: uppercase;
+  @extend thick-font;
+  width: 150px;
+  margin: 25px auto;
+  text-align: center;
+  display: block;
+  border: 1px solid $darkbrown;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #2d2a29;
+  &:hover {
+    background-color: $secondary;
+    color: #fff;
+  }
 }
 
 /* ------------------------------------ */
 /* HEADER/NAV */
 /* ------------------------------------ */
-header {
-
-}
-
 .logo-container {
-  padding: 30px 0 20px;
-  background-color: #171312;
-  width: 100%;
-  .logo {
-    display: inline-block;
-    margin: 0 auto;
-    width: 270px;
+  padding: 50px 0 30px;
+  background-color: $darkbrown;
+  p {
+    /* LOGO TEXT */
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 170%;
+    letter-spacing: 8px;
   }
 }
 
+.logo-img {
+  padding-bottom: 9px;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+
+}
+
 .nav-container {
-  /*width: 100%;*/
   background-color: rgba(0, 0, 0, 0.89);
-  border-top: 1px dotted $lightbrown;
+  border-top: 1px dotted $primary;
 }
 
 nav {
@@ -59,7 +136,19 @@ nav {
     li {
       display: inline-block;
       margin: 15px 15px;
-      color: $lightbrown;
+      text-transform: uppercase;
     }
   }
+}
+
+.fade div {
+  max-height: 50vh;
+}
+
+/* ------------------------------------ */
+/* MAIN BODY */
+/* ------------------------------------ */
+.work-showcase {
+  width: 90%;
+  margin: 0 auto;
 }
