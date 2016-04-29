@@ -3,92 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CustomTimber</title>
-  <!-- CAROUSEL  -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
-  <link type="text/css" href="vendor\css\normalize.css" rel="stylesheet">
-  <link type="text/css" href="vendor\css\grid.css" rel="stylesheet">
+  <title>Calmech Development | Custom Home Builder</title>
+  <link type="text/css" href="vendor/css/normalize.css" rel="stylesheet">
+  <link type="text/css" href="vendor/css/grid.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-  <link type="text/css" href="resource\css\style.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/css/slippry.css">
+  <link type="text/css" href="resource/css/style.css" rel="stylesheet">
 </head>
-<body>
 
+<body>
   <header>
     <div class="logo-container">
-      <img class="logo-img" src="resource\img\logo.png">
-      <p>custom timber</p>
+      <img class="logo-img" src="resource/img/logo.png" alt="logo">
+      <p>calmech development</p>
     </div>
     <div class="nav-container">
       <nav>
         <ul>
-          <li><a href="#">what we do</a></li>
-          <li><a href="#">contact us</a></li>
-          <li><a href="#">social media</a></li>
+          <li><a href="#main-body">what we do</a></li>
+          <li><a href="#contact-us">contact us</a></li>
         </ul>
       </nav>
     </div>
-    <div class="fade span-2-of-2">
-      <div><img class="responsive-image hero" src="resource\img\home1.jpg" alt="house picture"></div>
-      <div><img class="responsive-image hero" src="resource\img\home1.jpg" alt="house picture"></div>
-      <div><img class="responsive-image hero" src="resource\img\home1.jpg" alt="house picture"></div>
-    </div>
+    <ul class="pictures-demo">
+      <li>
+        <img src="resource/img/home1.jpg" alt="house picture">
+      </li>
+      <li>
+        <img src="resource/img/home2.jpg" alt="house picture">
+      </li>
+      <li>
+        <img src="resource/img/home3.jpg" alt="house picture">
+      </li>
+    </ul>
   </header>
 
-  <section class="main-body">
+  <section id="main-body">
     <div class="row">
       <div class="col span-2-of-2">
         <h1>we build stunning first impressions</h1>
         <p class="long-copy">
           Our timeless, one-of-a-kind dwellings will always reflect your vision of the ideal living space, because you help design it. From initial design through all phases of construction, customers enjoy a one-on-one relationship throughout the entire process.
         </p>
-        <a href="#" class="button">Let's Get Started!</a>
+        <a href="#get-started" class="button">Let's Get Started!</a>
       </div>
     </div>
-    <h2>define your life, define your luxury</h2>
+    <h2 id="get-started">define your life, define your luxury</h2>
     <ul class="house-showcase clearfix">
       <li>
-        <figure class="house-photo">
-          <img src="resource\img\bathroom.jpg" alt="Bathroom">
-        </figure>
-        <h3>Bathrooms</h3>
-        <p>
-          Make the luxury spa your everyday experience.
-        </p>
+        <a href="#"><figure class="house-photo">
+          <img src="resource/img/bathroom.jpg" alt="Bathroom">
+          </figure>
+          <h3>Bathrooms</h3>
+          <p>
+            Make the luxury spa your everyday experience.
+          </p>
+        </a>
       </li>
       <li>
-        <figure class="house-photo">
-          <img src="resource\img\kitchen.jpg" alt="Kitchen">
-        </figure>
-        <h3>Kitchens</h3>
-        <p>
-          Setting the stage for great food and great living.
-        </p>
+        <a href="#"><figure class="house-photo">
+          <img src="resource/img/kitchen.jpg" alt="Kitchen">
+          </figure>
+          <h3>Kitchens</h3>
+          <p>
+            Setting the stage for great food and great living.
+          </p>
+        </a>
       </li>
       <li>
-        <figure class="house-photo">
-          <img src="resource\img\reno.jpg" alt="Renovation">
-        </figure>
-        <h3>Renovations</h3>
-        <p>
-          We’ll breath new life onto an old or unfinished home.
-        </p>
+        <a href="#"><figure class="house-photo">
+          <img src="resource/img/reno.jpg" alt="Renovation">
+          </figure>
+          <h3>Renovations</h3>
+          <p>
+            We’ll breath new life onto an old or unfinished home.
+          </p>
+        </a>
       </li>
       <li>
-        <figure class="house-photo">
-          <img src="resource\img\curb.jpg" alt="Curb Appeal">
-        </figure>
-        <h3>Curb Appeal</h3>
-        <p>
-          Coming home to unparalleled beauty is an endless reward.
-        </p>
+        <a href="#"><figure class="house-photo">
+          <img src="resource/img/curb.jpg" alt="Curb Appeal">
+          </figure>
+          <h3>Curb Appeal</h3>
+          <p>
+            Coming home to unparalleled beauty is an endless reward.
+          </p>
+        </a>
       </li>
     </ul>
   </section>
 
-  <section class="contact-us">
-
+  <section id="contact-us">
       <h2>have a question? let us know!</h2>
       <div class="row">
       <div class="col span-1-of-2">
@@ -109,7 +115,7 @@
             <h4>email</h4>
           </li>
           <li>
-            <p>customtimber@custom.com</p>
+            <p>calmech.development@customhome.com</p>
           </li>
         </ul>
       </div>
@@ -127,11 +133,6 @@
   </section>
 
   <footer class="clearfix">
-    <div class="copyright">
-      <p>
-          Copyright &copy; 2016 Custom Timber. All rights reserved.
-      </p>
-    </div>
     <div class="social-media">
       <ul>
         <li>
@@ -142,15 +143,15 @@
         </li>
       </ul>
     </div>
+    <div class="copyright">
+      <p>
+        Copyright &copy; 2016 Calmech Development. All rights reserved.
+      </p>
+    </div>
   </footer>
 
-
-
-  <!-- JQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <!-- CAROUSEL PLUGIN -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
-  <script type="text/javascript" src="resource\js\script.js"></script>
-
+  <script src="vendor/js/slippry.min.js"></script>
+  <script type="text/javascript" src="resource/js/script.js"></script>
 </body>
 </html>
